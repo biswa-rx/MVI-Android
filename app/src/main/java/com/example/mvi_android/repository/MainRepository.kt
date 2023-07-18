@@ -29,7 +29,7 @@ constructor(
             }
             val cachedBlog = blogDao.get()
             emit(DataState.Success(cacheMapper.mapFromEntityList(cachedBlog)))
-            emit(DataState.Success(blogs))
+//            emit(DataState.Success(blogs))
         } catch (e : Exception){
             emit(DataState.Error(e))
         }

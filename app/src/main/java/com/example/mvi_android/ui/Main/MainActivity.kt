@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
     private fun appendBlogTitles(blogs: List<Blog>){
         val sb = StringBuilder()
         for(blog in blogs){
-            sb.append(blog.title + "\n")
+            sb.append(blog.body.toString() +"\n")
         }
         text.text = sb.toString()
     }

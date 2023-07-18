@@ -12,7 +12,7 @@ data class BlogCacheEntity(
     var id: Int,
 
     @ColumnInfo(name = "title")
-    var title: String,
+    var title: Int,
 
     @ColumnInfo(name = "body")
     var body: String,

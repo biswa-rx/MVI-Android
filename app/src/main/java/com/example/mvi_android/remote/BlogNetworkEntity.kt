@@ -5,23 +5,23 @@ import com.google.gson.annotations.SerializedName
 
 data  class BlogNetworkEntity(
 
-    @SerializedName("pk")
+    @SerializedName("id")
     @Expose
     var id: Int,
 
-    @SerializedName("title")
+    @SerializedName("postId")
     @Expose
-    var title: String,
+    var title: Int,
 
-    @SerializedName("body")
+    @SerializedName("name")
     @Expose
     var body: String,
 
-    @SerializedName("image")
+    @SerializedName("email")
     @Expose
     var image: String,
 
-    @SerializedName("category")
+    @SerializedName("body")
     @Expose
     var category: String
 )
